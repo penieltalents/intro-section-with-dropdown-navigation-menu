@@ -117,13 +117,112 @@ p{
     font-size: 2.5em;
     font-weight: bolder;
     line-height: -30;
-
 }
 
-@media all and (min-width: 1280px){
+.wee-desktop{
+    display: none;
+}
+
+
+@media all and (min-width: 571px) and (max-width: 1199px){
     body{
-        background-color: darkred;
-        /* background-color: white; */
+        background-color: white;
+    }
+
+   .flex-for-mobile-image{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-picture-mobile{
+        width: 50%;
+    }
+
+    .logo{
+        /* display: inline-block; */
+        font-size: 3em;
+        font-weight: bolder;
+        line-height: -30;
+    
+    }
+
+    .header{
+        display: flex;
+        margin-top: -2.2em;
+        justify-content: space-around;
+        gap: 40em;
+    }
+}
+
+@media all and (min-width: 571px) and (max-width: 1003px){
+
+    body{
+        background-color: white;
+    }
+
+    .header{
+        display: grid;
+        margin-top: em;
+        justify-content: space-around;
+        /* margin-inline: 1em;     */
+        grid-auto-flow: column;
+        gap: 36em;
+    }
+}
+
+@media all and (min-width: 571px) and (max-width: 864px){
+
+    body{
+        background-color: white;
+    }
+
+    .header{
+        display: grid;
+        margin-top: 80px;
+        justify-content: space-around;
+        /* margin-inline: 1em;     */
+        grid-auto-flow: column;
+        gap: 27em;
+    }
+}
+
+@media all and (min-width: 571px) and (max-width: 864px){
+
+    body{
+        background-color: white;
+    }
+
+    .header{
+        display: grid;
+        margin-top: -.5em;
+        justify-content: space-around;
+        /* margin-inline: 1em;     */
+        grid-auto-flow: column;
+        gap: 22em;
+    }
+}
+
+@media all and (min-width: 571px) and (max-width: 864px){
+
+    body{
+        background-color: white;
+    }
+
+    .header{
+        display: grid;
+        margin-top: -1.5em;
+        justify-content: space-around;
+        /* margin-inline: 1em;     */
+        grid-auto-flow: column;
+        gap: 17em;
+    }
+}
+
+
+@media all and (min-width: 1200px){
+    body{
+        /* background-color: darkred; */
+        background-color: white;
     }
     .main-picture-mobile{
         display: none;
@@ -177,8 +276,11 @@ p{
     button{
         height: 2.5em;
         align-self: center;
-        padding-inline: 1.3em;
+        padding-inline: 1.5em;
         font-size: 1em;
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid black;
 
     }
 
@@ -190,16 +292,70 @@ p{
         display: flex;
         flex-direction: column;
         order: 1;
+        align-self: flex-end;
+        max-width: 550px;
     }
 
     .main-flex{
-        display: grid;
-        grid-auto-flow: column;
+        /* display: grid;
+        grid-auto-flow: column; */
+        margin-top: 1em;
+        gap: 6em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .text-align{
+        text-align: left;
+        margin-top: 2.5em;
+    }
+
+    p{
+        max-width: 360px;
+        line-height: 1.3;
+    }
+    
+    .flex-for-paragraph{
+        margin-top: -1.7em;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .wee{
+        display: none;
+    }
+
+    .wee-desktop{
+        display: inline-block;
+        font-size: 4.2em;
+        text-align: left;
+        line-height: .9em;
+        max-width: 590px;
+        font-weight: 550;
+        margin-bottom: .4em;
     }
 
     .main-picture-desktop{
-        display: block;
-        width: 40%;
+        display: inline-block;
+        width: 33%;
         order: 2;
+    }
+
+    .gap-for-desktop{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-bottom: 2em;
+    }
+
+    button{
+
+    }
+
+    .btn{
+        color: white;
+        display: flex;
+        justify-content: flex-start;
     }
 }
