@@ -193,7 +193,7 @@ p{
     }
 
     .header{
-        display: grid;
+        display: none;
         margin-top: -.5em;
         justify-content: space-around;
         /* margin-inline: 1em;     */
@@ -259,7 +259,7 @@ p{
         display: grid;
         margin-top: .2em;
         justify-content: start;
-        /* margin-inline: 1em;     */
+        /* margin-inline: 1em; */
         grid-auto-flow: column;
         gap: 36em;
     }
@@ -308,7 +308,7 @@ p{
 
     .text-align{
         text-align: left;
-        margin-top: 2.5em;
+        margin-bottom: 2.5em;
     }
 
     p{
@@ -345,12 +345,8 @@ p{
     .gap-for-desktop{
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 2em;
         margin-bottom: 2em;
-    }
-
-    button{
-
     }
 
     .btn{
